@@ -7,30 +7,6 @@
  * @license   Apache-2.0
  * @copyright Òscar Casajuana 2014
  * @version   0.1
- *
- * How to use it?
- * Here's an example on how to load ckeditor on textareas
- *
- * <textarea data-ckeditor-disable>
- *     This textarea won't have ckeditor enabled
- * </textarea>
- * <textarea data-ckeditor-resize_enabled=false data-ckeditor-toolbar="toolbar-name"></textarea>
- *
- * $('textarea').parseDataAttributes({
- *     prefix: "ckeditor", // will search for data-ckeditor- prefixed attributes
- *     params: {
- *         // default params to be merged with data- params
- *         toolbar: "full",
- *         resize_enabled: false
- *     }
- *  }, function($this, params) {
- *      // Run a callback after params have been parsed
- *      $this.ckeditor(params);
- *  });
- *
- * WARNING: camelCasedValues are lowercased by the DOM, so you will need to declare
- *          that attributes as dashed-attributes and they will be converted to
- *          camel cased (i.e. dashedAttributes).
  */
 ;(function($){
     // dashed-toCamelCase
