@@ -42,7 +42,12 @@
                 if (param.match(/(\-[a-z])/g)) {
                     param = param.camelCase();
                 }
-                if (!isNaN(value)) {
+                if (typeof value === 'string') {
+                    if (value === 'true' || value === 'false') {
+                        value = Boolean(value);
+                    }
+                }
+                if (!isNaN(value) && typeof value !== 'boolean') {
                     value = parseInt(value, 10);
                 }
                 options.params[param] = value;
