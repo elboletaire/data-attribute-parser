@@ -1,0 +1,12 @@
+{
+  "name": "data-attribute-parser",
+  "version": "0.0.2",
+  "description": "jQuery helper plugin to parse `data-` attributes and load other plugins using that parsed attributes as plugin params.",
+  "main": "jquery.parseDataAttributes.js",
+  "repository": "git@github.com:elboletaire/data-attribute-parser.git",
+  "author": "Òscar Casajuana <elboletaire@underave.net>",
+  "license": "Apache",
+  "dependencies": {
+    "jquery": "^2.0.0"
+  }
+}
